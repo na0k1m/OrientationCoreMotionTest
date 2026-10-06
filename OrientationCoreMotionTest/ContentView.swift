@@ -18,7 +18,7 @@ struct ContentView: View {
                     .font(.system(size: 28, weight: .black))
                     .foregroundColor(colorForZone(orientationManager.currentZone))
                 
-                Text(String(format: "현재 각도: %.1f°", orientationManager.relativeYawDegrees))
+                Text(String(format: "현재 각도: %.0f°", orientationManager.relativeYawDegrees))
                     .font(.title3)
                     .monospacedDigit()
             }
